@@ -7,7 +7,7 @@
 
   <meta name="keywords" content="clinton, judy, resume, cv">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="A CV for Clinton Judy, a web developer in State College, Pennsylvania.">
+  <meta name="description" content="Clinton Judy — Senior Engineer building production AI products. Rails, RAG, full-stack. State College, PA.">
   <meta name="author" content="Clinton Judy">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -76,10 +76,10 @@
         </h1>
 
         <h1 class="small">
-          <span id="js-rotating">Web Developer | Site Reliability Engineer | Developer Operations | Full&ndash;Stack Engineer | Data Wrangler | Stylesheet Scientist</span>
+          <span id="js-rotating">AI Product Engineer | Full&ndash;Stack Developer | RAG Architect | Production ML Builder | Rails Veteran | DevOps &amp; SRE</span>
         </h1>
 
-        <p>Father, hackerspace founder, security enthusiast, robotics instructor&hellip;</p>
+        <p>Father, music producer, AI builder, hackerspace founder&hellip;</p>
 
         <div class="page-scroll">
           <a href="#profile" class="btn btn-lg btn-custom">Get to Know Me</a>
@@ -148,23 +148,26 @@
             <div class="profile-text padding-right-yes">
               <div class="row">
                 <div class="col-md-12">
-                  <h2 class="section-title uppercase">Hacker for Hire.</h2>
+                  <h2 class="section-title uppercase">Builder of Things That Think.</h2>
                   <p>
-                    Born and raised in State College, Pennsylvania. I&rsquo;m a highly motivated web developer with an
-                    international client portfolio.
+                    Senior engineer at Retail Zipline, where I built <strong>Zippy</strong>&mdash;a production RAG chatbot
+                    that&rsquo;s been the company&rsquo;s flagship AI feature for over two and a half years. Before most
+                    engineers had heard of retrieval-augmented generation, I was shipping it to paying customers.
                   </p>
                   <span class="divider"></span>
                   <p class="text-grey">
-                    I&rsquo;ve been a Rails developer for the last 10 years, but I&rsquo;ve been programming my entire life.
-                    I&rsquo;m the author of several small Rails libraries, including <a href="https://github.com/judy/kanina">Kanina</a>
-                    for RabbitMQ messaging and <a href="https://github.com/fracturedatlas/artfully_app">Artful.ly</a> for event
-                    ticketing. I&rsquo;m currently learning Elixir (with Phoenix) and Elm, and would love to start building
-                    open-source libraries in both!
+                    I&rsquo;ve been a Rails developer for 15+ years, but these days my work lives at the intersection of
+                    traditional web engineering and AI/ML. I designed and built Zippy&rsquo;s full stack: ingestion pipelines
+                    that decompose documents into atomic facts, vector search with pgvector, streaming LLM responses,
+                    and&mdash;most recently&mdash;tool calling via OpenAI&rsquo;s Responses API.
+                    I&rsquo;m also the author of open-source libraries like
+                    <a href="https://github.com/judy/kanina">Kanina</a> (RabbitMQ) and
+                    <a href="https://github.com/fracturedatlas/artfully_app">Artful.ly</a> (event ticketing).
                   </p>
                   <p class="text-grey">
-                    I love the practice of software craftsmanship, and I strive to amaze every client
-                    I work with. I am actively looking for a full-time senior/team lead position, in
-                    full-stack web development or developer operations. Let&rsquo;s build stuff together!
+                    Born and raised in State College, Pennsylvania. Father of two. Music producer on weekends
+                    (<a href="https://weeklybeats.com/judy">WeeklyBeats</a>). Still believe the best code is written
+                    by people who give a damn.
                   </p>
                 </div>
               </div>
@@ -319,7 +322,48 @@
 
               <div class="resume-item">
                 <div class="resume-year">
-                  <span class="resume-year">2018-NOW</span>
+                  <span class="resume-year">2019&ndash;NOW</span>
+                </div>
+
+                <div class="resume-btn">
+                  <a href="#workZipline" data-toggle="collapse" data-parent="#work"></a>
+                </div>
+
+                <div class="panel">
+                  <div class="panel-heading">
+                    <div class="panel-title">
+                      <h4 class="resume-title">Senior Web Engineer &ndash; Retail Zipline</h4>
+                    </div>
+                  </div>
+
+                  <div id="workZipline" class="panel-collapse collapse in">
+                    <div class="panel-body text-grey">
+                      <p>
+                        <ul>
+                          <li><strong>Built <a href="https://getzipline.com/ai-at-zipline/">Zippy</a></strong>, the company&rsquo;s production RAG chatbot and flagship AI feature&mdash;from zero to shipped in months, now live with 50+ retail brands for 2.5+ years. Designed the full architecture: document ingestion pipelines, atomic fact extraction via LLM, pgvector semantic search, streaming responses, and access-controlled retrieval.</li>
+                          <li>Integrated <strong>OpenAI Responses API</strong> with function calling, enabling Zippy to autonomously decide when to search and call tools.</li>
+                          <li>Shipped <strong>multi-turn conversations</strong>, query refinement, streaming responses, and user feedback systems.</li>
+                          <li>Built <strong>individual learner reports</strong> for the Learning Insights suite&mdash;overdue tracking, filtering by security level, team, and user.</li>
+                          <li>Built <strong>Report Builder</strong>&mdash;a flexible reporting tool with custom columns, filters, helper text, and role-based access.</li>
+                          <li>Built <strong>Assessment tools</strong>&mdash;historic results, auditee search, scoring and sorting, and the complete auditor results workflow.</li>
+                          <li>Shipped <strong>discussion comment threading</strong>, notifications, mention tracking, and pagination across the messaging system.</li>
+                          <li>Built <strong>MegaSeed</strong>, an internal developer tool for generating large-scale fake data to test performance characteristics as the platform scales.</li>
+                          <li>Built <strong>REST Hooks</strong> integration for Zapier, enabling customers to connect Zipline with external tools and workflows.</li>
+                          <li>Built a complete <strong>video transcoding pipeline</strong> using AWS MediaConvert and HLS streaming for user-uploaded content.</li>
+                          <li>Migrated a large number of <strong>legacy reports to BigQuery</strong> as part of a small team&mdash;painstaking work matching edge cases to ensure numbers were exact.</li>
+                          <li>Contributed to <strong>PDF ingestion</strong> for the AI knowledge base, including upstream fixes to an open-source PDF parser to handle multi-column layouts correctly.</li>
+                          <li>Prototyped the <strong>AI Quiz Generator</strong> during a company hackathon&mdash;automatically turns lessons into personalized quizzes. Later rebuilt by a dedicated team for production.</li>
+                          <li>Built <strong>survey filters</strong>, set up <strong>automated performance testing on CI</strong>, and shipped caching optimizations across the stack.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="resume-item">
+                <div class="resume-year">
+                  <span class="resume-year">2018&ndash;2019</span>
                 </div>
 
                 <div class="resume-btn">
@@ -475,7 +519,7 @@
 
               <div class="resume-item">
                 <div class="resume-year">
-                  <span class="resume-year">2007 &ndash; NOW</span>
+                  <span class="resume-year">2007 &ndash; 2019</span>
                 </div>
 
                 <div class="resume-btn">
@@ -601,6 +645,29 @@
                 <div class="item">
                   <div class="animated" data-animation-effect="flipInX">
                     <div class="profile hidden-xs">
+                      <img src="assets/images/ryan.holm.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
+                    </div>
+
+                    <div class="content">
+                      <h3>Helzberg Diamonds</h3>
+
+                      <p>
+                        Zippy returns an answer instantaneously&hellip;it&rsquo;s on-brand, easy to engage
+                        with&hellip;and cites every source, so it makes it really easy for admins to update our library.
+                      </p>
+
+                      <p class="source">
+                        Ryan Holm
+                        <br>
+                        <span>District Vice President, Retail Innovation &amp; Operations</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="animated" data-animation-effect="flipInX">
+                    <div class="profile hidden-xs">
                       <img src="assets/images/jt.marino.jpg" alt="" class="img-responsive img-circle img-thumbnail" />
                     </div>
 
@@ -710,6 +777,10 @@
               <div class="flexslider-controls">
                 <ul class="flex-control-nav">
                   <li>
+                    <img src="assets/images/ryan.holm.jpg" alt="" class="img-responsive" />
+                  </li>
+
+                  <li>
                     <img src="assets/images/jt.marino.jpg" alt="" class="img-responsive" />
                   </li>
 
@@ -754,7 +825,7 @@
             <h2 class="section-title uppercase">Contact Me</h2>
 
             <p class="section-subtitle">
-              Let&rsquo;s build something together!
+              Let&rsquo;s build something that thinks.
             </p>
 
             <span class="divider center"></span>
@@ -779,10 +850,9 @@
               </h2>
 
               <h4 class="text-grey">
-                I&rsquo;d love to talk to you and your team.
+                Want to talk AI, Rails, or building products that matter?
                 Email me at
-                <a href="mailto:clinton@judy.io">clinton@judy.io</a>, and
-                we&rsquo;ll see if it&rsquo;s a match!
+                <a href="mailto:clinton@judy.io">clinton@judy.io</a>.
               </h4>
 
               <span class="divider center"></span>
