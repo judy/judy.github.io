@@ -150,9 +150,10 @@
                 <div class="col-md-12">
                   <h2 class="section-title uppercase">Builder of Things That Think.</h2>
                   <p>
-                    Senior engineer at Retail Zipline, where I built <strong>Zippy</strong>&mdash;a production RAG chatbot
-                    that&rsquo;s been the company&rsquo;s flagship AI feature for over two and a half years. Before most
-                    engineers had heard of retrieval-augmented generation, I was shipping it to paying customers.
+                    Senior engineer, most recently at Retail Zipline, where I created <strong>Zippy</strong>&mdash;the
+                    company&rsquo;s production RAG assistant and flagship AI feature for three years&mdash;then re-architected
+                    it twice underneath live traffic and shipped agentic tool use over MCP. Before most engineers had heard
+                    of retrieval-augmented generation, I was shipping it to paying customers.
                   </p>
                   <span class="divider"></span>
                   <p class="text-grey">
@@ -322,7 +323,7 @@
 
               <div class="resume-item">
                 <div class="resume-year">
-                  <span class="resume-year">2019&ndash;NOW</span>
+                  <span class="resume-year">2019&ndash;2026</span>
                 </div>
 
                 <div class="resume-btn">
@@ -339,21 +340,33 @@
                   <div id="workZipline" class="panel-collapse collapse in">
                     <div class="panel-body text-grey">
                       <p>
+                        <h5 class="resume-subtitle">AI Systems (2023&ndash;2026)</h5>
                         <ul>
-                          <li><strong>Built <a href="https://getzipline.com/ai-at-zipline/">Zippy</a></strong>, the company&rsquo;s production RAG chatbot and flagship AI feature&mdash;from zero to shipped in months, now live with 50+ retail brands for 2.5+ years. Designed the full architecture: document ingestion pipelines, atomic fact extraction via LLM, pgvector semantic search, streaming responses, and access-controlled retrieval.</li>
-                          <li>Integrated <strong>OpenAI Responses API</strong> with function calling, enabling Zippy to autonomously decide when to search and call tools.</li>
-                          <li>Shipped <strong>multi-turn conversations</strong>, query refinement, streaming responses, and user feedback systems.</li>
-                          <li>Built <strong>individual learner reports</strong> for the Learning Insights suite&mdash;overdue tracking, filtering by security level, team, and user.</li>
-                          <li>Built <strong>Report Builder</strong>&mdash;a flexible reporting tool with custom columns, filters, helper text, and role-based access.</li>
-                          <li>Built <strong>Assessment tools</strong>&mdash;historic results, auditee search, scoring and sorting, and the complete auditor results workflow.</li>
-                          <li>Shipped <strong>discussion comment threading</strong>, notifications, mention tracking, and pagination across the messaging system.</li>
-                          <li>Built <strong>MegaSeed</strong>, an internal developer tool for generating large-scale fake data to test performance characteristics as the platform scales.</li>
-                          <li>Built <strong>REST Hooks</strong> integration for Zapier, enabling customers to connect Zipline with external tools and workflows.</li>
-                          <li>Built a complete <strong>video transcoding pipeline</strong> using AWS MediaConvert and HLS streaming for user-uploaded content.</li>
-                          <li>Migrated a large number of <strong>legacy reports to BigQuery</strong> as part of a small team&mdash;painstaking work matching edge cases to ensure numbers were exact.</li>
-                          <li>Contributed to <strong>PDF ingestion</strong> for the AI knowledge base, including upstream fixes to an open-source PDF parser to handle multi-column layouts correctly.</li>
-                          <li>Prototyped the <strong>AI Quiz Generator</strong> during a company hackathon&mdash;automatically turns lessons into personalized quizzes. Later rebuilt by a dedicated team for production.</li>
-                          <li>Built <strong>survey filters</strong>, set up <strong>automated performance testing on CI</strong>, and shipped caching optimizations across the stack.</li>
+                          <li><strong>Created <a href="https://getzipline.com/ai-at-zipline/">&ldquo;Zippy&rdquo;</a>, Zipline&rsquo;s production RAG assistant and flagship AI feature</strong>&mdash;found the approach in research, pitched it, built the prototype in two weeks, named it, and shipped it. Live with <strong>50+ retail brands</strong> across <strong>1,000,000+ conversations</strong> and <strong>2,000,000+ pages</strong> indexed, and the product&rsquo;s primary AI differentiator for three years.</li>
+                          <li><strong>Arrived independently at contextual retrieval roughly fifteen months before it was published as a technique.</strong> Recognized that retrieved chunks fail without their surrounding context, and built ingestion that decomposes documents into self-contained <em>atomic facts</em>&mdash;the same core insight Anthropic later published as <a href="https://www.anthropic.com/news/contextual-retrieval">Contextual Retrieval</a>.</li>
+                          <li><strong>Re-architected the information retrieval engine, twice.</strong> Led the migration from pgvector to Elasticsearch, then designed and shipped vision-model document understanding so Zippy could answer questions about diagrams, planograms and tables.</li>
+                          <li><strong>Shipped agentic tool use to production</strong>, including <strong>MCP (Model Context Protocol)</strong> integration that lets Zippy query live systems for real-time inventory, scheduling and policy answers rather than only indexed documents. Built the MCP server model, client and admin interface, and multi-step tool calling via the OpenAI Responses API.</li>
+                          <li><strong>Made retrieval quality measurable.</strong> Built Zippy&rsquo;s first LLM-as-judge evaluation system and multiple evaluation data sets that informed later architecture decisions, including a scenario set generated from three years of real customer bug reports, so migrations were decided on measured pass rates instead of opinion.</li>
+                          <li><strong>Engineered fast, access-controlled retrieval at enterprise scale</strong>: vector search combined with permission-predicate filtering, working around HNSW&rsquo;s known degradation under predicate constraints so results stay both fast and correctly scoped per user, team and role.</li>
+                          <li><strong>Built the full conversational front end</strong> with Hotwire (Turbo + Stimulus): token-streaming responses, multi-turn conversation state, source citations, query refinement, and inline feedback capture.</li>
+                          <li><strong>Shipped a multilingual retrieval fix over a weekend</strong> to unblock a customer&rsquo;s pre-recorded national television segment, adding automatic query translation so non-English questions retrieved correctly.</li>
+                        </ul>
+                        <h5 class="resume-subtitle">Architecture &amp; Technical Leadership (2025&ndash;2026)</h5>
+                        <ul>
+                          <li><strong>Settled architecture arguments with measured evidence instead of opinion.</strong> Ran a corpus study on real customer documents to prove which extraction failures actually occurred, and won committee approval for the result, and had it in production fifteen working days later.</li>
+                          <li><strong>Set the numeric go/no-go criteria my own projects were judged against</strong>, before results came in, so the call rested on measured outcomes rather than sunk cost.</li>
+                          <li><strong>Challenged a projected $100K/yr infrastructure spend</strong> by pricing it against the existing pipeline&rsquo;s actual invoiced cost, then ran the vendor review that surfaced a 32x cheaper path.</li>
+                          <li><strong>Served as the company&rsquo;s AI technical authority</strong>&mdash;standing member of the AI Steering Committee, author of the RFCs setting AI architecture direction, and the escalation point for AI questions from engineering, product, sales and customers.</li>
+                          <li><strong>Fronted the platform&rsquo;s AI story externally</strong>: enterprise security and responsible-AI reviews, sales RFPs, and vendor architecture negotiations.</li>
+                          <li><strong>Acted as team lead</strong> for the AI/search team: cycle planning, technical direction, and distributing architecture work across the team rather than holding it.</li>
+                        </ul>
+                        <h5 class="resume-subtitle">Product &amp; Platform Engineering (2019&ndash;2023)</h5>
+                        <ul>
+                          <li><strong>Built Assessment tools</strong> end to end&mdash;historic results, auditee search, scoring and sorting, and the complete auditor workflow. <strong>116M+ assessment questions answered.</strong></li>
+                          <li><strong>Built Report Builder</strong> (custom columns, filters, role-based access), Learning Insights learner reports, and discussion threading with notifications and mentions across the messaging system.</li>
+                          <li><strong>Built platform capabilities</strong>: REST Hooks for Zapier integration, a full video transcoding pipeline on AWS MediaConvert with HLS streaming, and MegaSeed&mdash;an internal tool for generating large-scale realistic data to test performance as the platform scaled.</li>
+                          <li><strong>Migrated legacy reporting to BigQuery</strong> as part of a small team, matching edge cases exactly so historical numbers stayed correct.</li>
+                          <li><strong>Kept the application fast as Zipline grew 10x in active users</strong>, through Rails and SQL optimization, caching, and automated performance testing in CI.</li>
                         </ul>
                       </p>
                     </div>
